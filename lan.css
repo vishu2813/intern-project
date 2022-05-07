@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text: 1.5rem;
+    --head: calc(1rem + 5vw);
+    --bg-color: rgb(255, 174, 0);
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.hero-section{
+    min-height: 100vh;
+    background: url('bur.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    background-position: center;
+    z-index: 2;
+    animation: slide 1s ease-in-out;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0rem 1.5rem;
+   
+
+}
+
+
+
+
+.navbar{
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: var(--text)
+}
+
+.navbar ul il {
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+}
+
+
+.navbar ul il a:hover{
+    
+    border: 2px solid white;
+}
+
+
+
+.hero-text{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    color:white;
+   
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(-100%);
+    }to{
+        transform: translateX(0%);
+    }
+}
+
+.hero-text h2{
+    font-size: var(--head);
+}
+
+
+.hero-text p{
+    font-size: 3rem;
+}
+.my{
+   display: inline-block;
+   background-color:red;
+  margin-top:20px;
+    font-size: 30px; 
+    color:white;
+    border:2px solid yellow;
+
+}
+
+.hero-text a:hover{
+      opacity: 0.6;
+}
